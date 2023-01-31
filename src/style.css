@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  justify-content: space-around;    
+  justify-content: space-around;
 }
 
 .recent,
@@ -28,4 +28,3 @@
   display: flex;
   flex-direction: column;
 }
-
