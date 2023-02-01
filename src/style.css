@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recent,
+.add {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.recent__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.refresh {
+  height: 16px;
+}
+
+.recent__container {
+  border: 1px solid black;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
