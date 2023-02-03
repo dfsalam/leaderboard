@@ -5,11 +5,12 @@ const loadData = async () => {
   const container = document.querySelector('.recent__container');
   let dataToLoad = '';
   
-  for (let i = 0; i < data.result.length; i += 1) {
+  data.result.forEach(element => {
     dataToLoad += `
-          <div class="recent__score">Name:${data.result[i].user} ${data.result[i].score}</div>    
+          <div class="recent__score">Name:${element.user} ${element.score}</div>    
           `;
-  }
+  });
+  
   container.innerHTML = dataToLoad;
 
 };
