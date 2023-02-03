@@ -17,4 +17,4 @@ formCnt.addEventListener('submit', (e) => {
 window.onload = () => {
   // Load stored data
   loadData();
-}
+};
