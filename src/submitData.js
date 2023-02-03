@@ -1,9 +1,9 @@
 const submitData = async () => {
   const name = document.querySelector('.input__user');
   const score = document.querySelector('.input__score');
-  const data = { 
-    'user': name.value, 
-    'score': score.value 
+  const data = {
+    user: name.value,
+    score: score.value,
   };
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/HuDs7U0CQZGKymImVaSp/scores/', {
     method: 'POST', // or 'PUT'
@@ -13,14 +13,13 @@ const submitData = async () => {
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
-    .then((data) => {
-      name.value = "";
-      score.value ="";
+    .then(() => {
+      name.value = '';
+      score.value = '';
     })
     .catch((error) => {
       console.error('Error:', error);
     });
-}
+};
 
 export default submitData;
-
