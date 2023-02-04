@@ -29,8 +29,6 @@ button {
   align-items: center;
 }
 
-
-
 .recent__container {
   border: 2px solid black;
   background-color: #fff;
@@ -38,7 +36,7 @@ button {
 
 .inputs {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .inpt {
@@ -69,12 +67,6 @@ button {
   transform: scale(0.9);
 }
 
-.refresh {  
+.refresh {
   align-self: center;
 }
-
-
-
-
-
-
