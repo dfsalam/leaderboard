@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+  font-family: 'Pangolin', cursive;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button {
+  font: inherit;
+}
+
 .main {
   display: flex;
   justify-content: space-around;
@@ -13,18 +26,47 @@
 .recent__header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-}
-
-.refresh {
-  height: 16px;
+  align-items: center;
 }
 
 .recent__container {
-  border: 1px solid black;
+  border: 2px solid black;
+  background-color: #fff;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
+}
+
+.inpt {
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.recent__score:nth-of-type(odd) {
+  background-color: #c8c0c0;
+}
+
+.recent__score:nth-of-type(even) {
+  background-color: #fff;
+}
+
+.btn {
+  padding: 0 0.6rem;
+  background: white;
+  border: 3px solid black;
+  box-shadow: 3px 3px 0 0 black;
+  height: 25px;
+  width: max-content;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.refresh {
+  align-self: center;
 }
